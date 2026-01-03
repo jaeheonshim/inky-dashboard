@@ -1,5 +1,5 @@
 # Inky Dashboard
-A simple e-ink dashboard for planning and organizing your life.
+A simple e-ink dashboard for planning and organizing your life. Featured on the [official Raspberry Pi website](https://www.raspberrypi.com/news/stay-on-schedule-with-raspberry-pi-pico-w-and-an-e-ink-dashboard/) and in [Raspberry Pi Magazine issue #152!](https://magazine.raspberrypi.com/issues/152)
 
 ![](showcase.jpg)
 
