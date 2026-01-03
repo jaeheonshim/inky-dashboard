@@ -24,7 +24,7 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 include(pico_sdk_import.cmake)
 
 # Pimoroni setup
-set(PIMORONI_PICO_PATH "/home/jaeheonshim/pico/pimoroni-pico" CACHE PATH "Path to Pimoroni Pico")
+set(PIMORONI_PICO_PATH ${PIMORONI_PICO_PATH} CACHE PATH "Path to Pimoroni Pico")
 include(pimoroni_pico_import.cmake)
 
 project(inky_dashboard C CXX ASM)

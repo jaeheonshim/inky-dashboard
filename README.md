@@ -23,3 +23,32 @@ First, clone the [server repository](https://github.com/jaeheonshim/inky-dashboa
 `src/calendar.cpp` - contains calendar layout and positioning algorithm   
 `src/inky_interface.cpp` - contains LVGL callback as well as other Inky Frame specific functions   
 `src/net.cpp` - contains functions for retrieving the data payload from the server endpoint
+
+## Building uf2 image
+set up environment following steps Pimoroni [setting up the pico](https://github.com/pimoroni/pimoroni-pico/blob/main/setting-up-the-pico-sdk.md) but you may also find [getting started with pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf) helpful.
+
+after finishing the steps in setting up the pico change out of the build directory and export PIMORONI_PICO_PATH
+```
+cd ..
+export PIMORONI_PICO_PATH=$(pwd)
+cd ~
+mkdir project
+cd project
+git clone https://github.com/jaeheonshim/inky-dashboard.git
+cd inky-dashboard
+git submodule update --init
+
+```
+
+Create settings.hpp based on settings.hpp.example
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+you should now have a inky_dashboard.uf2 file in  your build directory and you can copy that to your inky frame [Pimoroni video on how update pico firmware](https://www.youtube.com/watch?v=ERdmCimt1do)
+
+
