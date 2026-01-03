@@ -49,6 +49,4 @@ cmake ..
 make
 ```
 
-you should now have a inky_dashboard.uf2 file in  your build directory and you can copy that to your inky frame [Pimoroni video on how update pico firmware](https://www.youtube.com/watch?v=ERdmCimt1do)
-
-
+you should now have a inky_dashboard.uf2 file in  your build directory and you can copy that to your inky frame [Pimoroni video on how update pico firmware](https://www.youtube.com/watch?v=ERdmCimt1do) (copy your newly built uf2 file instead of the micropython one!)
